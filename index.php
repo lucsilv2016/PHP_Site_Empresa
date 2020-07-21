@@ -1,0 +1,5 @@
+<? 
+  
+ /*Projeto Site Empresa PHP*/
+
+?>
