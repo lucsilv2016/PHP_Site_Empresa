@@ -4,6 +4,11 @@
       color: white;
   }
 
+  .topo-logo{
+    width: 100px;
+    height: 100px;
+  }
+
   .topo-nav a {
       text-decoration: none;
       color: rgb(255, 196, 0);
@@ -20,3 +25,35 @@
     background-color: rgb(170, 121, 31);
     color: rgb(0, 0, 0);
 }
+
+.link-email{
+    color: rgb(218, 162, 8);
+}
+
+.link-email:hover{
+    text-decoration: none;
+    color: rgb(255, 223, 134);
+}
+
+/*Slides*/
+
+.slide1{
+    padding: 50px;
+    font-size: 2em;
+    background-color: chocolate;
+    color: white;
+  }
+  
+  .slide2{
+    padding: 50px;
+    font-size: 2em;
+    background-color: orange;
+    color: red;
+  }
+  
+  .slide3{
+    padding: 50px;
+    font-size: 2em;
+    background-color: yellow;
+    color: blue;
+  }
