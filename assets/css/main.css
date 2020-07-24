@@ -1,0 +1,22 @@
+  /*cabeçalho(topo)*/
+  .fundo-topo{
+      background-color: rgb(121, 94, 43);
+      color: white;
+  }
+
+  .topo-nav a {
+      text-decoration: none;
+      color: rgb(255, 196, 0);
+      margin-left: 30px;
+      font-size: 1.5em;
+  }
+
+  .topo-nav a:hover{
+      color: rgb(255, 242, 199);
+  }
+
+  /* rodapé (footer) */
+.fundo-footer{
+    background-color: rgb(170, 121, 31);
+    color: rgb(0, 0, 0);
+}
