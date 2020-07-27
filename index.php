@@ -1,31 +1,39 @@
-<?php include('html_header.php');?>
-<?php include('topo.php');?>
+<?php
 
-<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-  <div class="carousel-inner">
-    <div class="carousel-item active slide1">
-      <h1>Slide 1</h1>
-    </div>
-    <div class="carousel-item slide2">
-      <h1>Slide 2</h1>
-    </div>
-    <div class="carousel-item slide3">
-      <h1>Slide 3</h1>
-    </div>
-  </div>
-  <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="sr-only">Previous</span>
-  </a>
-  <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="sr-only">Next</span>
-  </a>
-</div>
+include('layout/html_header.php');
+include('layout/nav.php');
 
+$pag = $_GET['p'];
 
+if (isset($_GET['p'])) {
+    $pag = $_GET['p'];
+  }
 
+    switch ($pag) {
 
+      //lgout
+      case 'logout':
+        session_destroy();
+        Header('Location: '.$_SERVER['PHP_SELF']);
+        return; 
+      break;
+      case 'inicio':
+        include('inicio.php');
+        break;
+      case 'empresa':
+        include('empresa.php');
+        break;
+      case 'servico':
+        include('servico.php');
+        break;        
+      case 'contato':
+        include('contato.php');
+        break;   
 
-<?php include('footer.php');?>
-<?php include('html_footer.php');?>
+      default:
+        include('inicio.php');
+        break;
+    }
+
+include('layout/footer.php');
+include('layout/html_footer.php');
