@@ -3,7 +3,8 @@
 include('layout/html_header.php');
 include('layout/nav.php');
 
-$pag = $_GET['p'];
+//rotas - roteamento
+$pag = 'inicio';
 
 if (isset($_GET['p'])) {
     $pag = $_GET['p'];
@@ -11,7 +12,7 @@ if (isset($_GET['p'])) {
 
     switch ($pag) {
 
-      //lgout
+     
       case 'logout':
         session_destroy();
         Header('Location: '.$_SERVER['PHP_SELF']);
@@ -37,3 +38,5 @@ if (isset($_GET['p'])) {
 
 include('layout/footer.php');
 include('layout/html_footer.php');
+
+
