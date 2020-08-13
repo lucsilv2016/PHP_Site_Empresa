@@ -22,7 +22,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         $email = $_POST['text_email'];
         $assunto = $_POST['text_assunto'];
         $mensagem = $_POST['text_mensagem'];
-        // se os campso estão preenchidos
+        // se os campos estão preenchidos
         if (empty($erro)) {
             // ver se o email é valido
             if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
